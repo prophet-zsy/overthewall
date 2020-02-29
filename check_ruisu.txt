@@ -1,0 +1,4 @@
+//for check
+ps aux | grep appex
+//if ruisu is not running, for run
+sudo /appex/appexinstall.sh
