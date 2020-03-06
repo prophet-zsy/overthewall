@@ -1,0 +1,56 @@
+感谢 博主 萌爪实验室
+blog site: https://www.mengclaw.com/2018/05/26/5/
+
+锐速，商业版叫做LotServer
+
+1、查看当前系统内核，他会显示当前系统已经安装的内核版本：
+
+dpkg -l|grep linux-image
+root@ubuntu:~# dpkg -l|grep linux-image
+
+linux-image-generic
+linux-image-4.4.0-97-generic
+linux-image-extra-4.4.0-97-generic
+
+2、查看可以更新的内核版本，检查是否有以下需要安装的内核：
+
+sudo apt-cache search linux-image
+
+linux-image-4.4.0-47-generic
+linux-image-extra-4.4.0-47-generic
+
+3、安装新内核
+
+sudo apt-get install linux-image-4.4.0-47-generic linux-image-extra-4.4.0-47-generic
+
+root@ubuntu:~# sudo apt-get install linux-image-4.4.0-47-generic linux-image-extra-4.4.0-47-generic
+
+4、卸载不受支持的内核版本
+
+sudo apt-get purge -y 内核1 内核2 内核
+
+root@ubuntu:~# sudo apt-get purge linux-image-generic linux-image-4.4.0-97-generic linux-image-extra-4.4.0-97-generic
+
+5、更新 grub引导
+
+sudo update-grub
+
+6、重启VPS
+
+reboot
+root@ubuntu:~# reboot
+
+——+—— 到此为止，系统内核更换完毕，开始安装锐速 ——+——
+
+7、安装LotServer（感谢Vicer的脚本*1）：
+
+wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh" && bash /tmp/appex.sh 'install'
+锐速使用方法:
+启动命令 /appex/bin/serverSpeeder.sh start
+停止加速 /appex/bin/serverSpeeder.sh stop
+状态查询 /appex/bin/serverSpeeder.sh status
+更新许可 /appex/bin/serverSpeeder.sh renewLic
+重新启动 /appex/bin/serverSpeeder.sh restart
+
+*1 企业版锐速由Vicer制作，源地址：
+https://moeclub.org/2017/03/08/14/
