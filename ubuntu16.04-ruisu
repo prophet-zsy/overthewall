@@ -1,3 +1,14 @@
+几条命令直达最后：
+在vultr的VPS上，系统为Ubuntu16.04，依次运行以下命令，然后直接跳到最后查看锐速是否运行以及参数配置（一般默认不动）即可：
+sudo apt-get install linux-image-4.4.0-47-generic linux-image-extra-4.4.0-47-generic
+sudo apt-get purge -y linux-image-4.4.0-142-generic linux-image-4.4.0-173-generic linux-image-extra-4.4.0-142-generic linux-image-generic
+（这里会跳出一个图形界面，选择No）
+sudo update-grub
+reboot
+wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh" && bash /tmp/appex.sh 'install'
+
+
+具体过程如下：
 感谢 博主 萌爪实验室
 blog site: https://www.mengclaw.com/2018/05/26/5/
 
