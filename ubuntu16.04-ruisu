@@ -53,4 +53,4 @@ wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com
 重新启动 /appex/bin/serverSpeeder.sh restart
 
 *1 企业版锐速由Vicer制作，源地址：
-https://moeclub.org/2017/03/08/14/
+https://moeclub.org/2017/03/09/14/
