@@ -9,3 +9,5 @@ https://github.com/prophet-zsy/lotServer
 ruisu followed the link above has been disabled， and to be continued, you can see the new link shown next:
 https://github.com/91yun/serverspeeder
 (ruisu on centos6/7)
+
+by the way, centos is more stable than ubuntu
