@@ -3,7 +3,7 @@ ssr+(ruisu/bbr),  on sever(Unbuntu16.04)
 lotserver install link has been disabled about what shown above， and please refer to the fllowing info  
 
 # cite
-https://github.com/fei5seven/lotServer  
+https://github.com/fei5seven/lotServer  (the licence is not stable, and when its ruisu on ubuntu, it will crash now and then)
 https://github.com/prophet-zsy/lotServer
 (ubuntu/centos)
 
