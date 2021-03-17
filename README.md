@@ -12,5 +12,5 @@ https://github.com/91yun/serverspeeder
 
 by the way, centos is more stable than ubuntu
 
-on centos7:
+on centos7:   
 the last link for ruisu, you should install ssr first and install ruisu, then you install the ssr again, the ssr can be used with ruisu
